@@ -1,2 +1,2 @@
-### SonarQube in AWS using Fargate
+### SonarQube Demo
 
