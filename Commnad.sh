@@ -54,10 +54,10 @@ RUN ls -list
 # sonarqube server from other projects
 # sonar.sources directory for sources of project
 RUN sonar-scanner \
-    -Dsonar.host.url="http://localhost:9000" \
+    -Dsonar.host.url="http://sonarqube.devops4me.com:9000" \
     -Dsonar.projectKey="SONAR_PROJECT_KEY" \
     -Dsonar.sources="src"
 ``
 ## 1st Analysis:
 Run docker build --network=host --no-cache . in sonarqube-react-app directory
-Enter http://localhost:9000/dashboard?id=SONAR_PROJECT_KEY to see analysis results
+Enter http://sonarqube.devops4me.com:9000/dashboard?id=SONAR_PROJECT_KEY to see analysis results
